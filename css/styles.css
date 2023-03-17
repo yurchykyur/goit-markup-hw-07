@@ -603,7 +603,6 @@ img {
 }
 
 .section .value-text {
-  min-width: 100%;
   margin: 0;
   font-weight: 500;
 
@@ -624,66 +623,55 @@ img {
     display: flex;
     flex-wrap: wrap;
     column-gap: var(--values-text-margin-column);
+    row-gap: 72px;
   }
 
   .values-list .item {
-    width: calc((100% - 1 * var(--values-text-margin-column) / 2));
+    width: 356px;
   }
 }
 
-/* .section.value {
-  padding-bottom: 60px;
-} */
+@media screen and (min-width: 1200px) {
+  .section.value {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
 
-/* .values-list {
-  display: flex;
-  column-gap: var(--values-text-margin-column);
+  .values-list .item-icon {
+    display: contents;
+  }
+
+  .section .value-subtitle {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .values-list {
+    flex-wrap: nowrap;
+  }
+
+  .values-list .item {
+    flex-basis: calc((100% - 3 * var(--values-text-margin-column) / 4));
+  }
+
+  .values-list .item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    height: 112px;
+
+    border-radius: 4px;
+    background-color: var(--light-color);
+  }
+
+  .values-list .item-icon .icon {
+    width: 64px;
+    height: 64px;
+  }
 }
-
-.values-list .item {
-  flex-basis: calc((100% - 3 * var(--values-text-margin-column) / 4));
-}
-
-.values-list .item-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-  height: 112px;
-
-  border-radius: 4px;
-  background-color: var(--light-color);
-}
-
-.values-list .item-icon .icon {
-  width: 64px;
-  height: 64px;
-}
-
-.section .value-subtitle {
-  margin-top: 0;
-  padding: 0;
-  margin-bottom: 8px;
-  color: var(--dark-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-
-.section .value-text {
-  margin: 0;
-  padding: 0;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-} */
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
 /* .section.doing {
   padding-top: 60px;

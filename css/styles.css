@@ -156,6 +156,7 @@ img {
     pointer-events: none;
     transition: opacity var(--transition-250-cubic),
       visibility var(--transition-250-cubic);
+    overflow: auto;
   }
 
   .mobile-menu.is-open {

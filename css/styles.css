@@ -170,9 +170,10 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
     width: 8px;
     height: 8px;
+    transform: translate(-50%, -50%);
   }
 
   .mobile-menu__close-btn:hover,

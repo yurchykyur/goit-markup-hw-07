@@ -155,15 +155,24 @@ img {
     position: absolute;
     top: 40px;
     right: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    /* justify-content: center;
+    align-items: center; */
     width: 24px;
     height: 24px;
     background: var(--accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+  }
+
+  .mobile-menu__close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
   }
 
   .mobile-menu-nav {
@@ -1067,14 +1076,20 @@ img {
   .subscribe-form-title {
     text-align: center;
   }
+
+  .subscribe-form-in-wrapper {
+    justify-content: center;
+  }
+
   .subscribe-form-input {
     margin-bottom: 16px;
     width: 396px;
   }
+}
 
-  .subscribe-form-submit {
-    margin-right: auto;
-    margin-left: auto;
+@media screen and (max-width: 428px) {
+  .subscribe-form-input {
+    width: calc(320px - 2 * 16px);
   }
 }
 
@@ -1100,12 +1115,6 @@ img {
   }
 }
 
-@media screen and (max-width: 428px) {
-  .subscribe-form-input {
-    width: calc(320px - 2 * 16px);
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer {
     padding-top: 100px;
@@ -1127,25 +1136,6 @@ img {
     margin-left: 80px;
   }
 }
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/* 
-
-
-
-
-
-*/
-
-/* 
-
-
-
- */
 
 /* END footer */
 

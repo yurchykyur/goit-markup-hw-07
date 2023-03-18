@@ -156,14 +156,14 @@ img {
     top: 40px;
     right: 40px;
     display: block;
-    /* justify-content: center;
-    align-items: center; */
     width: 24px;
     height: 24px;
     background: var(--accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    transition: border-color var(--transition-250-cubic),
+      background-color var(--transition-250-cubic);
   }
 
   .mobile-menu__close-icon {
@@ -173,6 +173,13 @@ img {
     transform: translate(-50%, -50%);
     width: 8px;
     height: 8px;
+  }
+
+  .mobile-menu__close-btn:hover,
+  .mobile-menu__close-btn:focus {
+    border-color: transparent;
+    background-color: var(--pressed-state-color);
+    fill: var(--button-secondary-text-focus-color);
   }
 
   .mobile-menu-nav {

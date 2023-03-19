@@ -291,8 +291,6 @@ img {
 
   .mobile-menu-social-link .icon {
     display: block;
-    width: 24px;
-    height: 24px;
   }
 }
 
@@ -696,11 +694,6 @@ img {
     border-radius: 4px;
     background-color: var(--light-color);
   }
-
-  .values-list .item-icon .icon {
-    width: 64px;
-    height: 64px;
-  }
 }
 
 /*----------- section  What are we doing ----------*/
@@ -820,10 +813,10 @@ img {
   transition: background-color var(--transition-250-cubic);
 }
 
-.team .social-link .icon {
+/* .team .social-link .icon {
   width: 16px;
   height: 16px;
-}
+} */
 
 .team .social-link:hover,
 .footer .social-link:focus {
@@ -877,8 +870,6 @@ img {
 }
 
 .customer-link .icon {
-  width: 104px;
-  height: 56px;
   fill: var(--subtle-text-color);
 
   transition: fill var(--transition-250-cubic);
@@ -986,11 +977,6 @@ img {
   transition: background-color var(--transition-250-cubic);
 }
 
-.footer .social-link .icon {
-  width: 24px;
-  height: 24px;
-}
-
 .footer .social-link:hover,
 .footer .social-link:focus {
   background-color: var(--success-color);
@@ -1068,8 +1054,6 @@ img {
 }
 
 .subscribe-form-submit .icon {
-  width: 24px;
-  height: 24px;
   align-items: center;
 }
 
@@ -1200,8 +1184,6 @@ img {
 
 .modal-close-btn-icon {
   display: block;
-  width: 8px;
-  height: 8px;
 }
 
 .modal-close-btn {
@@ -1231,11 +1213,6 @@ img {
 
 /* ---------  MODAL FORM -------------*/
 
-/* .modal-form {
-  
-  width: 392px;
-} */
-
 .modal-form-name {
   margin-top: 0;
   margin-bottom: 16px;
@@ -1249,14 +1226,14 @@ img {
   color: var(--dark-color);
 }
 
-.modal-form .modal-form-field:not(:last-child) {
+.modal-form-field:not(:last-child) {
   display: block;
   margin-bottom: 8px;
 }
 
 /* не спрацьовує маржин 16 рх */
 
-.modal-form .modal-form-field:last-child {
+.modal-form-field:last-child {
   margin-bottom: 16px;
 }
 
@@ -1304,8 +1281,7 @@ img {
   top: 50%;
   left: 19px;
   transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
+
   fill: var(--dark-color);
 
   transition: fill var(--transition-250-cubic);
@@ -1366,22 +1342,6 @@ img {
   color: var(--color-privacy);
 }
 
-/* .modal-form-checkbox-desc::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 16px;
-
-  border: 1.25px solid var(--dark-color);
-  border-radius: 2px;
-  content: '';
-  cursor: pointer;
-  transition: border-color var(--transition-250-cubic),
-    background-color var(--transition-250-cubic),
-    background-image var(--transition-250-cubic);
-} */
-
 .modal-form-checkbox:checked + .modal-form-checkbox-desc:before {
   background-image: url(../images/icon-check.svg);
   background-repeat: no-repeat;
@@ -1399,8 +1359,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 10px;
-  height: 8px;
 }
 
 .modal-form-checkbox-desc .link {

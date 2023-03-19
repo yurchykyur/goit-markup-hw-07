@@ -42,6 +42,23 @@
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
+
+        <button
+          type="button"
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <!-- is-open -->
+
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use
+              href="./images/icons.svg#icon-menu-burger"
+              aria-label="Open mobile menu"
+            ></use>
+          </svg>
+        </button>
+
         <address class="main-adress">
           <ul class="contact-adress list">
             <li class="item">
@@ -54,6 +71,96 @@
             </li>
           </ul>
         </address>
+      </div>
+
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <!-- is-open -->
+
+        <div class="mobile-menu-container">
+          <!-- container -->
+          <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon" width="8" height="8">
+              <use href="./images/icons.svg#close-modal"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="list mobile-menu-nav-list">
+              <li class="item">
+                <a href="./index.html" class="link">Studio</a>
+              </li>
+
+              <li class="item">
+                <a href="./portfolio.html" class="link">Portfolio</a>
+              </li>
+
+              <li class="item"><a href="" class="link current">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-address-list list">
+              <li class="mobile-menu-address-item">
+                <a href="tel:+110001111111" class="tel">+11 (000) 111-11-11</a>
+              </li>
+
+              <li class="mobile-menu-address-item">
+                <a href="mailto:info@devstudio.com" class="mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-menu-social list">
+            <li>
+              <a
+                class="mobile-menu-social-link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer nofollow noopener"
+                ><svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="mobile-menu-social-link link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer nofollow noopener"
+                ><svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="mobile-menu-social-link link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer nofollow noopener"
+                ><svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="mobile-menu-social-link link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer nofollow noopener"
+                ><svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- End Шапка сторінки -->
@@ -305,7 +412,7 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer nofollow noopener"
-                ><svg class="icon">
+                ><svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -317,7 +424,7 @@
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noreferrer nofollow noopener"
-                ><svg class="icon">
+                ><svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -329,7 +436,7 @@
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noreferrer nofollow noopener"
-                ><svg class="icon">
+                ><svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -341,7 +448,7 @@
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noreferrer nofollow noopener"
-                ><svg class="icon">
+                ><svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -366,7 +473,7 @@
 
             <button type="submit" class="subscribe-form-submit">
               <span>Subscribe</span
-              ><svg class="icon">
+              ><svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

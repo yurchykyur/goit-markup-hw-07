@@ -143,7 +143,6 @@ img {
     z-index: 1000;
     width: 100%;
     height: 100%;
-    /* max-height: 796px; */
     background-color: var(--body-background-color);
 
     opacity: 0;
@@ -489,7 +488,23 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/backgroung-hero--2.jpg');
+      url('../images/backgroung-hero-2-mobile.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  screen and (min-resolution:192dpi) and (max-width: 767px),
+  screen and (min-resolution:2dppx) and (max-width: 767px) {
+    .hero.overlay {
+      max-width: 428px;
+      height: 432px;
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/backgroung-hero-2-mobile-@2x.jpg');
+    }
   }
 }
 
@@ -565,7 +580,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/backgroung-hero--2.jpg');
+      url('../images/backgroung-hero-2-tablet.jpg');
   }
 }
 
@@ -575,13 +590,6 @@ img {
     padding-bottom: 204px;
   }
 
-  /* .hero-title {
-    max-width: 496px;
-    margin-bottom: 48px;
-    font-size: 56px;
-    line-height: 1.07;
-  } */
-
   .hero.overlay {
     max-width: 1440px;
     height: 600px;
@@ -590,7 +598,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/backgroung-hero--2.jpg');
+      url('../images/backgroung-hero-2-desktop.jpg');
   }
 }
 

@@ -1187,7 +1187,6 @@ img {
   top: 96px;
   left: 50%;
   transform: translate(-50%);
-  padding: 72px 24px 24px;
 
   background-color: var(--modal-background-color);
   border-radius: 4px;
@@ -1345,37 +1344,16 @@ img {
   border-color: var(--primary-brand-color);
 }
 
-@media screen and (max-width: 767px) {
-  .modal {
-    padding: 72px 16px 16px;
-
-    /* width: 392px; */
-  }
-}
-@media screen and (min-width: 768px) {
-  /* .modal {
-    max-width: 408px;
-  } */
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    top: 80px;
-  }
-}
-
-/* .user-policy-wrapper {
+.user-policy-wrapper {
   position: relative;
   margin-bottom: 24px;
-} */
+}
 
-/* .user-policy-wrapper .modal-form-field {
+.user-policy-wrapper .modal-form-field {
   margin-bottom: 0;
-} */
+}
 
-/* .modal-form-checkbox-desc {
-
-
+.modal-form-checkbox-desc {
   display: flex;
 
   align-items: center;
@@ -1385,9 +1363,9 @@ img {
   letter-spacing: 0.04em;
 
   color: var(--color-privacy);
-} */
+}
 
-/* .modal-form-checkbox-desc::before {
+.modal-form-checkbox-desc::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1401,30 +1379,30 @@ img {
   transition: border-color var(--transition-250-cubic),
     background-color var(--transition-250-cubic),
     background-image var(--transition-250-cubic);
-} */
+}
 
-/* .modal-form-checkbox:checked + .modal-form-checkbox-desc:before {
+.modal-form-checkbox:checked + .modal-form-checkbox-desc:before {
   background-image: url(../images/icon-check.svg);
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: center;
   background-color: var(--pressed-state-color);
   border-color: var(--pressed-state-color);
-} */
+}
 
-/* .modal-form-checkbox:focus + .modal-form-checkbox-desc:before {
+.modal-form-checkbox:focus + .modal-form-checkbox-desc:before {
   outline: 2px solid var(--primary-brand-color);
-} */
+}
 
-/* .user-policy-check-on {
+.user-policy-check-on {
   position: absolute;
   top: 0;
   left: 0;
   width: 10px;
   height: 8px;
-} */
+}
 
-/* .modal-form-checkbox-desc .link {
+.modal-form-checkbox-desc .link {
   color: var(--primary-brand-color);
   transition: color var(--transition-250-cubic);
 }
@@ -1432,9 +1410,9 @@ img {
 .modal-form-checkbox-desc .link:hover,
 .modal-form-checkbox-desc .link:focus {
   color: var(--pressed-state-color);
-} */
+}
 
-/* .modal-form-checkbox-icon {
+.modal-form-checkbox-icon {
   position: relative;
   margin: 0;
   display: block;
@@ -1449,25 +1427,25 @@ img {
 
   transition: border-color var(--transition-250-cubic),
     background-color var(--transition-250-cubic);
-} */
+}
 
-/* .modal-form-checkbox:checked
+.modal-form-checkbox:checked
   + .modal-form-checkbox-desc
   .modal-form-checkbox-icon {
   background-color: var(--pressed-state-color);
   border-color: var(--pressed-state-color);
-} */
+}
 
-/* .modal-form-checkbox-on {
+.modal-form-checkbox-on {
   width: 10px;
   height: 8px;
   opacity: 0;
   visibility: hidden;
   display: none;
   transition: opacity var(--transition-250-cubic);
-} */
+}
 
-/* .modal-form-checkbox:checked
+.modal-form-checkbox:checked
   + .modal-form-checkbox-desc
   .modal-form-checkbox-on {
   position: absolute;
@@ -1479,20 +1457,20 @@ img {
   opacity: 1;
   visibility: visible;
   display: inline;
-} */
+}
 
-/* .modal-form-checkbox:focus
+.modal-form-checkbox:focus
   + .modal-form-checkbox-desc
   .modal-form-checkbox-icon {
   outline: 2px solid var(--primary-brand-color);
-} */
+}
 
-/* .modal-form-checkbox-text {
+.modal-form-checkbox-text {
   display: block;
   margin: 0;
-} */
+}
 
-/* .modal-form-submit {
+.modal-form-submit {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -1514,12 +1492,37 @@ img {
   border: transparent;
   border-radius: 4px;
   transition: background-color var(--transition-250-cubic);
-} */
+}
 
-/* .modal-form-submit:hover,
+.modal-form-submit:hover,
 .modal-form-submit:focus {
   background-color: var(--pressed-state-color);
-} */
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    padding: 72px 16px 16px;
+
+    /* width: 392px; */
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 72px 24px 24px;
+
+    /* width: 392px; */
+  }
+
+  /* .modal {
+    max-width: 408px;
+  } */
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 80px;
+  }
+}
 
 /* --------- End MODAL FORM -------------*/
 

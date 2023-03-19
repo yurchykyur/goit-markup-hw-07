@@ -1231,9 +1231,10 @@ img {
 
 /* ---------  MODAL FORM -------------*/
 
-.modal-form {
-  flex-direction: column;
-}
+/* .modal-form {
+  
+  width: 392px;
+} */
 
 .modal-form-name {
   margin-top: 0;
@@ -1248,12 +1249,13 @@ img {
   color: var(--dark-color);
 }
 
-.modal-form-field {
+.modal-form .modal-form-field:not(:last-child) {
   display: block;
   margin-bottom: 8px;
 }
 
 /* не спрацьовує маржин 16 рх */
+
 .modal-form .modal-form-field:last-child {
   margin-bottom: 16px;
 }
@@ -1265,7 +1267,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 360px;
 }
 
 .modal-form-input {
@@ -1365,7 +1366,7 @@ img {
   color: var(--color-privacy);
 }
 
-.modal-form-checkbox-desc::before {
+/* .modal-form-checkbox-desc::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -1379,7 +1380,7 @@ img {
   transition: border-color var(--transition-250-cubic),
     background-color var(--transition-250-cubic),
     background-image var(--transition-250-cubic);
-}
+} */
 
 .modal-form-checkbox:checked + .modal-form-checkbox-desc:before {
   background-image: url(../images/icon-check.svg);
@@ -1501,21 +1502,22 @@ img {
 
 @media screen and (max-width: 767px) {
   .modal {
+    width: 392px;
     padding: 72px 16px 16px;
-
-    /* width: 392px; */
   }
 }
+
+@media screen and (max-width: 392px) {
+  .modal {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
+    width: 408px;
     padding: 72px 24px 24px;
-
-    /* width: 392px; */
   }
-
-  /* .modal {
-    max-width: 408px;
-  } */
 }
 
 @media screen and (min-width: 1200px) {

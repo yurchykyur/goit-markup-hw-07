@@ -492,19 +492,34 @@ img {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  screen and (min-resolution:192dpi) and (max-width: 767px),
-  screen and (min-resolution:2dppx) and (max-width: 767px) {
-    .hero.overlay {
-      max-width: 428px;
-      height: 432px;
-      background-image: linear-gradient(
-          to right,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url('../images/backgroung-hero-2-mobile-@2x.jpg');
-    }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero.overlay {
+    max-width: 428px;
+    height: 432px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(46, 47, 66, 0.7)),
+        to(rgba(46, 47, 66, 0.7))
+      ),
+      url('../images/backgroung-hero-2-mobile-@2x.jpg');
+    background-image: -o-linear-gradient(
+        left,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/backgroung-hero-2-mobile-@2x.jpg');
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/backgroung-hero-2-mobile-@2x.jpg');
   }
 }
 
@@ -584,6 +599,37 @@ img {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero.overlay {
+    max-width: 768px;
+    height: 436px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(46, 47, 66, 0.7)),
+        to(rgba(46, 47, 66, 0.7))
+      ),
+      url('../images/backgroung-hero-2-tablet-@2x.jpg');
+    background-image: -o-linear-gradient(
+        left,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/backgroung-hero-2-tablet-@2x.jpg');
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/backgroung-hero-2-tablet-@2x.jpg');
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 288px;
@@ -599,6 +645,37 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url('../images/backgroung-hero-2-desktop.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero.overlay {
+    max-width: 1440px;
+    height: 600px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(46, 47, 66, 0.7)),
+        to(rgba(46, 47, 66, 0.7))
+      ),
+      url('../images/backgroung-hero-2-desktop-@2x.jpg');
+    background-image: -o-linear-gradient(
+        left,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/backgroung-hero-2-desktop-@2x.jpg');
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/backgroung-hero-2-desktop-@2x.jpg');
   }
 }
 

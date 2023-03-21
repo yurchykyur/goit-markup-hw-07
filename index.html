@@ -251,30 +251,75 @@
           <h2 class="doing-title">What are we doing</h2>
           <ul class="list doing-list">
             <li class="item">
-              <img
-                srcset="./images/img_1-desktop-@2x.jpg 2x"
-                src="./images/img_1.jpg"
-                alt="Desktop application is shown"
-                width="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img_1-desktop.webp     1x,
+                    ./images/img_1-desktop-@2x.webp 2x
+                  "
+                  type="image/webp" />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img_1-desktop.jpg     1x,
+                    ./images/img_1-desktop-@2x.jpg 2x
+                  " />
+
+                <img
+                  src="./images/img_1.jpg"
+                  alt="Desktop application is shown"
+                  width="360"
+              /></picture>
             </li>
 
             <li class="item">
-              <img
-                srcset="./images/img_2-desktop-@2x.jpg 2x"
-                src="./images/img_2.jpg"
-                alt="Mobile application is shown"
-                width="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img_2-desktop.webp     1x,
+                    ./images/img_2-desktop-@2x.webp 2x
+                  "
+                  type="image/webp" />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img_2-desktop.jpg     1x,
+                    ./images/img_2-desktop-@2x.jpg 2x
+                  " />
+
+                <img
+                  src="./images/img_2.jpg"
+                  alt="Mobile application is shown"
+                  width="360"
+              /></picture>
             </li>
 
             <li class="item">
-              <img
-                srcset="./images/img_3-desktop-@2x.jpg 2x"
-                src="./images/img_3.jpg"
-                alt="Synchronization of the mobile application and the desktop application is shown"
-                width="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img_3-desktop.webp     1x,
+                    ./images/img_3-desktop-@2x.webp 2x
+                  "
+                  type="image/webp" />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/img_3-desktop.jpg     1x,
+                    ./images/img_3-desktop-@2x.jpg 2x
+                  " />
+
+                <img
+                  src="./images/img_3.jpg"
+                  alt="Synchronization of the mobile application and the desktop application is shown"
+                  width="360"
+              /></picture>
             </li>
           </ul>
         </div>
@@ -289,7 +334,7 @@
           <ul class="list team-image">
             <li class="item">
               <img
-                srcset="./images/mark_guerrero-desktop-@2x.jpg"
+                srcset="./images/mark_guerrero-desktop-@2x.jpg 2x"
                 src="./images/mark_guerrero.jpg"
                 alt="Mark Guerrero"
               />
@@ -351,7 +396,7 @@
 
             <li class="item">
               <img
-                srcset="./images/tom_ford-desktop-@2x.jpg"
+                srcset="./images/tom_ford-desktop-@2x.jpg 2x"
                 src="./images/tom_ford.jpg"
                 alt="Tom Ford"
               />
@@ -413,7 +458,7 @@
 
             <li class="item">
               <img
-                srcset="./images/camila_garcia-desktop-@2x.jpg"
+                srcset="./images/camila_garcia-desktop-@2x.jpg 2x"
                 src="./images/camila_garcia.jpg"
                 alt="Camila Garcia"
               />
@@ -475,7 +520,7 @@
 
             <li class="item">
               <img
-                srcset="./images/daniel_wilson-desktop-@2x.jpg"
+                srcset="./images/daniel_wilson-desktop-@2x.jpg 2x"
                 src="./images/daniel_wilson.jpg"
                 alt="Daniel Wilson"
               />

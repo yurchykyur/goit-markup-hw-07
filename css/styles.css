@@ -471,6 +471,12 @@ img {
 
 /* Hero */
 
+.hero {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .hero-title {
     margin-bottom: 72px;
@@ -521,12 +527,6 @@ img {
       ),
       url('../images/backgroung-hero-2-mobile-@2x.jpg');
   }
-}
-
-.hero {
-  padding-top: 112px;
-  padding-bottom: 112px;
-  text-align: center;
 }
 
 .hero-title {
@@ -897,11 +897,6 @@ img {
 
   transition: background-color var(--transition-250-cubic);
 }
-
-/* .team .social-link .icon {
-  width: 16px;
-  height: 16px;
-} */
 
 .team .social-link:hover,
 .footer .social-link:focus {
@@ -1418,19 +1413,6 @@ img {
   color: var(--color-privacy);
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-desc:before {
-  background-image: url(../images/icon-check.svg);
-  background-repeat: no-repeat;
-  background-size: 10px;
-  background-position: center;
-  background-color: var(--pressed-state-color);
-  border-color: var(--pressed-state-color);
-}
-
-.modal-form-checkbox:focus + .modal-form-checkbox-desc:before {
-  outline: 2px solid var(--primary-brand-color);
-}
-
 .user-policy-check-on {
   position: absolute;
   top: 0;
@@ -1472,8 +1454,6 @@ img {
 }
 
 .modal-form-checkbox-on {
-  width: 10px;
-  height: 8px;
   opacity: 0;
   visibility: hidden;
   display: none;
@@ -1487,8 +1467,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 10px;
-  height: 8px;
+
   opacity: 1;
   visibility: visible;
   display: inline;

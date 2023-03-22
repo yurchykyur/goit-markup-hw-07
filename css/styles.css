@@ -326,6 +326,7 @@ img {
 }
 
 @media screen and (max-width: 427px) {
+  .mobile-menu-nav-list .item .link,
   .mobile-menu-address-item .tel {
     font-size: calc(100vw / 428 * 36);
   }
